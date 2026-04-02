@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useMemo, useEffect, useRef } from "react";
-import { Plus, Minus, ShoppingCart, User, CheckCircle2, ChevronRight, Loader2, Search, X } from "lucide-react";
+import { Plus, Minus, ShoppingCart, User, CheckCircle2, ChevronRight, Loader2, Search, X, ArrowLeft } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 // --- Types ---
@@ -209,13 +209,25 @@ export default function OrderPage() {
   if (isSuccess) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-[#EDEEE9] p-6">
-        <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="bg-white p-12 rounded-[2rem] shadow-2xl text-center max-w-md w-full border border-gray-100">
-          <div className="w-24 h-24 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-8">
-            <CheckCircle2 className="w-12 h-12 text-green-500" />
+        <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="bg-white p-8 sm:p-12 rounded-[2rem] shadow-2xl text-center max-w-md w-full border border-gray-100">
+          <div className="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-6">
+            <CheckCircle2 className="w-10 h-10 text-green-500" />
           </div>
-          <h2 className="text-3xl font-bold text-[#002C5F] mb-4">Đặt món thành công!</h2>
-          <p className="text-gray-500 mb-10 text-lg leading-relaxed">Cảm ơn bạn. Đơn hàng đã được ghi nhận và đang được xử lý.</p>
-          <button onClick={() => setIsSuccess(false)} className="w-full bg-[#002C5F] hover:bg-[#003d82] text-white font-bold py-5 rounded-2xl transition-all shadow-xl shadow-blue-900/10">
+          <h2 className="text-2xl font-bold text-[#002C5F] mb-2">Đặt món thành công!</h2>
+          <p className="text-gray-500 mb-8 text-sm">Cảm ơn bạn. Đơn hàng đã được ghi nhận và đang được xử lý.</p>
+
+          <div className="mb-8 p-6 bg-gray-50 rounded-3xl border-2 border-dashed border-gray-200">
+            <p className="text-[#002C5F] font-black mb-4 uppercase tracking-widest text-xs">Vui lòng thanh toán</p>
+            <div className="bg-white p-3 rounded-2xl shadow-sm inline-block border border-gray-100">
+              <img src="/images/qr.jpg" alt="QR Payment" className="w-48 h-48 object-contain" />
+            </div>
+          </div>
+
+          <button
+            onClick={() => setIsSuccess(false)}
+            className="w-full bg-[#002C5F] hover:bg-[#003d82] text-white font-bold py-5 rounded-2xl transition-all shadow-xl shadow-blue-900/10 flex items-center justify-center gap-3 group"
+          >
+            <ArrowLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
             Quay lại thực đơn
           </button>
         </motion.div>
