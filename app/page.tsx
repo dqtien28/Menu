@@ -33,19 +33,19 @@ const CATEGORIES: Category[] = [
 const MENU: FoodItem[] = [
   // Snacks
   { id: "v1", name: "Xúc xích", price: 10000, category: "snacks", image: "https://images.unsplash.com/photo-1541544741938-0af808871cc0?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "v2", name: "Lạp xưởng", price: 15000, category: "snacks", image: "https://images.unsplash.com/photo-1593001874117-c99c800bc3b7?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "v3", name: "Khoai lang kén", price: 30000, category: "snacks", image: "https://images.unsplash.com/photo-1563714193019-219904791522?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "v4", name: "Khoai tây chiên", price: 30000, category: "snacks", image: "https://images.unsplash.com/photo-1573082833947-d7994d728e4c?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "v5", name: "Nem chua rán", price: 30000, category: "snacks", image: "https://user-images.githubusercontent.com/10141908/160243306-6f8e7b9e-6b9e-4b9e-8b9e-6b9e4b9e8b9e.jpg" },
+  { id: "v2", name: "Lạp xưởng", price: 15000, category: "snacks", image: "/images/lap_xuong.png" },
+  { id: "v3", name: "Khoai lang kén", price: 30000, category: "snacks", image: "/images/khoai_lang_ken.png" },
+  { id: "v4", name: "Khoai tây chiên", price: 30000, category: "snacks", image: "/images/khoai_tay_chien.png" },
+  { id: "v5", name: "Nem chua rán", price: 30000, category: "snacks", image: "/images/nem_chua_ran.png" },
 
   // Bánh Mì
   { id: "b1", name: "Trứng ốp ăn thêm", price: 7000, category: "banhmi", image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=300&h=200&auto=format&fit=crop" },
   { id: "b2", name: "Chả ăn thêm", price: 10000, category: "banhmi", image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "b3", name: "Bánh mì xúc xích", price: 20000, category: "banhmi", image: "https://images.unsplash.com/photo-1509722747041-619f3830422d?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "b4", name: "Bánh mì chả", price: 20000, category: "banhmi", image: "https://images.unsplash.com/photo-1509722747041-619f3830422d?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "b5", name: "Bánh mì trứng", price: 20000, category: "banhmi", image: "https://images.unsplash.com/photo-1509722747041-619f3830422d?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "b6", name: "Bánh mì trứng chả", price: 25000, category: "banhmi", image: "https://images.unsplash.com/photo-1509722747041-619f3830422d?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "b7", name: "Bánh mì trứng xúc xích", price: 30000, category: "banhmi", image: "https://images.unsplash.com/photo-1509722747041-619f3830422d?q=80&w=300&h=200&auto=format&fit=crop" },
+  { id: "b3", name: "Bánh mì xúc xích", price: 20000, category: "banhmi", image: "/images/banh_mi.png" },
+  { id: "b4", name: "Bánh mì chả", price: 20000, category: "banhmi", image: "/images/banh_mi.png" },
+  { id: "b5", name: "Bánh mì trứng", price: 20000, category: "banhmi", image: "/images/banh_mi.png" },
+  { id: "b6", name: "Bánh mì trứng chả", price: 25000, category: "banhmi", image: "/images/banh_mi.png" },
+  { id: "b7", name: "Bánh mì trứng xúc xích", price: 30000, category: "banhmi", image: "/images/banh_mi.png" },
 
   // Mì Tôm
   { id: "m1", name: "Trứng ốp ăn thêm", price: 7000, category: "mitom", image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=300&h=200&auto=format&fit=crop" },
@@ -60,32 +60,32 @@ const MENU: FoodItem[] = [
   { id: "m10", name: "Mì xào bò", price: 45000, category: "mitom", image: "https://images.unsplash.com/photo-1612927601601-6638404737ce?q=80&w=300&h=200&auto=format&fit=crop" },
 
   // Cơm
-  { id: "c1", name: "Chuyển thành cơm rang", price: 5000, category: "com", image: "https://images.unsplash.com/photo-1603133872878-684f208fb04b?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "c2", name: "Cơm ăn thêm", price: 5000, category: "com", image: "https://images.unsplash.com/photo-1603133872878-684f208fb04b?q=80&w=300&h=200&auto=format&fit=crop" },
+  { id: "c1", name: "Chuyển thành cơm rang", price: 5000, category: "com", image: "/images/com_rang.png" },
+  { id: "c2", name: "Cơm ăn thêm", price: 5000, category: "com", image: "/images/com_trang.png" },
   { id: "c3", name: "Canh chua thịt băm", price: 10000, category: "com", image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "c4", name: "Chả thêm", price: 10000, category: "com", image: "https://images.unsplash.com/photo-1603133872878-684f208fb04b?q=80&w=300&h=200&auto=format&fit=crop" },
+  { id: "c4", name: "Chả thêm", price: 10000, category: "com", image: "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?q=80&w=300&h=200&auto=format&fit=crop" },
   { id: "c5", name: "Kim chi thêm", price: 10000, category: "com", image: "https://images.unsplash.com/photo-1583224964978-2257b960c3d3?q=80&w=300&h=200&auto=format&fit=crop" },
   { id: "c6", name: "Xúc xích", price: 10000, category: "com", image: "https://images.unsplash.com/photo-1541544741938-0af808871cc0?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "c7", name: "Chả lá lốt thêm", price: 20000, category: "com", image: "https://images.unsplash.com/photo-1603133872878-684f208fb04b?q=80&w=300&h=200&auto=format&fit=crop" },
+  { id: "c7", name: "Chả lá lốt thêm", price: 20000, category: "com", image: "/images/cha_la_lot.png" },
   { id: "c8", name: "Trứng đúc thịt thêm", price: 25000, category: "com", image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=300&h=200&auto=format&fit=crop" },
   { id: "c9", name: "Trứng sốt cà chua thêm", price: 25000, category: "com", image: "https://images.unsplash.com/photo-1525351484163-7529414344d8?q=80&w=300&h=200&auto=format&fit=crop" },
   { id: "c10", name: "Gà xào nấm thêm", price: 30000, category: "com", image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=300&h=200&auto=format&fit=crop" },
   { id: "c11", name: "Thịt ba chỉ quay thêm", price: 30000, category: "com", image: "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "c12", name: "Cơm trứng sốt cà chua", price: 35000, category: "com", image: "https://images.unsplash.com/photo-1603133872878-684f208fb04b?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "c13", name: "Cơm trứng đúc thịt", price: 40000, category: "com", image: "https://images.unsplash.com/photo-1603133872878-684f208fb04b?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "c14", name: "Cơm ba chỉ rang cháy cạnh", price: 45000, category: "com", image: "https://images.unsplash.com/photo-1603133872878-684f208fb04b?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "c15", name: "Cơm bò sốt tiêu đen", price: 45000, category: "com", image: "https://images.unsplash.com/photo-1603133872878-684f208fb04b?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "c16", name: "Cơm chả lá lốt", price: 45000, category: "com", image: "https://images.unsplash.com/photo-1603133872878-684f208fb04b?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "c17", name: "Cơm gà sốt tiêu đen", price: 45000, category: "com", image: "https://images.unsplash.com/photo-1603133872878-684f208fb04b?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "c18", name: "Cơm gà xào nấm", price: 45000, category: "com", image: "https://images.unsplash.com/photo-1603133872878-684f208fb04b?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "c19", name: "Cơm đùi gà xối mỡ", price: 55000, category: "com", image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "c20", name: "Cơm đùi gà sốt chua ngọt", price: 55000, category: "com", image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "c21", name: "Cơm rang bò kim chi", price: 45000, category: "com", image: "https://images.unsplash.com/photo-1603133872878-684f208fb04b?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "c22", name: "Cơm rang gà kim chi", price: 45000, category: "com", image: "https://images.unsplash.com/photo-1603133872878-684f208fb04b?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "c23", name: "Cơm rang dưa bò", price: 45000, category: "com", image: "https://images.unsplash.com/photo-1603133872878-684f208fb04b?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "c24", name: "Cơm rang gà chiên", price: 45000, category: "com", image: "https://images.unsplash.com/photo-1603133872878-684f208fb04b?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "c25", name: "Cơm rang thịt băm", price: 45000, category: "com", image: "https://images.unsplash.com/photo-1603133872878-684f208fb04b?q=80&w=300&h=200&auto=format&fit=crop" },
-  { id: "c26", name: "Cơm ba chỉ quay", price: 50000, category: "com", image: "https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=300&h=200&auto=format&fit=crop" },
+  { id: "c12", name: "Cơm trứng sốt cà chua", price: 35000, category: "com", image: "/images/com_rang.png" },
+  { id: "c13", name: "Cơm trứng đúc thịt", price: 40000, category: "com", image: "/images/com_rang.png" },
+  { id: "c14", name: "Cơm ba chỉ rang cháy cạnh", price: 45000, category: "com", image: "/images/com_rang.png" },
+  { id: "c15", name: "Cơm bò sốt tiêu đen", price: 45000, category: "com", image: "/images/com_rang.png" },
+  { id: "c16", name: "Cơm chả lá lốt", price: 45000, category: "com", image: "/images/com_rang.png" },
+  { id: "c17", name: "Cơm gà sốt tiêu đen", price: 45000, category: "com", image: "/images/com_rang.png" },
+  { id: "c18", name: "Cơm gà xào nấm", price: 45000, category: "com", image: "/images/com_rang.png" },
+  { id: "c19", name: "Cơm đùi gà xối mỡ", price: 55000, category: "com", image: "/images/com_rang.png" },
+  { id: "c20", name: "Cơm đùi gà sốt chua ngọt", price: 55000, category: "com", image: "/images/com_rang.png" },
+  { id: "c21", name: "Cơm rang bò kim chi", price: 45000, category: "com", image: "/images/com_rang.png" },
+  { id: "c22", name: "Cơm rang gà kim chi", price: 45000, category: "com", image: "/images/com_rang.png" },
+  { id: "c23", name: "Cơm rang dưa bò", price: 45000, category: "com", image: "/images/com_rang.png" },
+  { id: "c24", name: "Cơm rang gà chiên", price: 45000, category: "com", image: "/images/com_rang.png" },
+  { id: "c25", name: "Cơm rang thịt băm", price: 45000, category: "com", image: "/images/com_rang.png" },
+  { id: "c26", name: "Cơm ba chỉ quay", price: 50000, category: "com", image: "/images/com_rang.png" },
 ];
 
 export default function OrderPage() {
@@ -169,15 +169,23 @@ export default function OrderPage() {
     setError("");
     setIsSubmitting(true);
 
+    const now = new Date();
+    const day = String(now.getDate()).padStart(2, '0');
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const year = now.getFullYear();
+    const today = `${day}-${month}-${year}`;
+
     const orderData = {
-      customer_name: userName,
-      items: cartItems.map(item => `${item.name} (x${item.quantity})`).join(", "),
-      total_price: totalPrice,
-      timestamp: new Date().toLocaleString("vi-VN"),
+      "Họ và Tên": userName,
+      "Món Ăn": cartItems.map(item => `${item.name} (x${item.quantity})`).join(", "),
+      "Tổng Tiền": totalPrice,
+      "Thời Gian": now.toLocaleString("vi-VN"),
     };
 
     try {
-      const response = await fetch(API_ENDPOINT, {
+      // Gửi đơn hàng vào sheet của ngày hôm nay
+      // Lưu ý: Sheet này cần được tạo trước (ví dụ bằng Google Apps Script)
+      const response = await fetch(`${API_ENDPOINT}?sheet=${today}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(orderData),
